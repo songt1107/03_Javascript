@@ -5,35 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>펭귄폭탄마</title>
     <style>
-        #game-container {
-            position: absolute;
+        .box {
             width: 500px;
-            height: 300px;
-            margin: 0 auto;
-            background-color: #f0f0f0;
+            height: 500px;
+            border: 2px solid black;
+            background-image: url("/펭귄폭탄마/village.png");
+            overflow: hidden;
         }
-        #penguin {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background-size: cover;
-            background-repeat: no-repeat;
+        
+        img {
+            width: 50px
         }
     </style>
-
 </head>
 <body>
     <h1>펭귄폭탄마 게임</h1>
 
-    <div class="container" style="width: 50px;">
-        <img src="/펭귄폭탄마/penguin.png" alt="Penguin" id="penguin">
+    <div class="box" id="box">
+        <img src="/펭귄폭탄마/penguin.png" id="peng">
     </div>
 
-    <div id="village" style="width: 500px;">
-        <img src="/펭귄폭탄마/village.png" alt="Village">
-    </div>
-
-    
     <p>1. 방향키로 이동할 수 있습니다.</p><br>
     <p>2. 'x'를 눌러 폭탄을 설치할 수 있습니다.</p><br>
     <p>3. 2초 뒤에 폭탄은 터집니다!</p>
