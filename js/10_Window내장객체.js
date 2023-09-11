@@ -4,7 +4,7 @@ document.getElementById("btn1").addEventListener("click", function() {
     setTimeout( function() {
         alert("3초 후 출력!")
     }, 3000);
-});
+})
 
 
 let interval; // setInterval을 저장하기 위한 전역 변수
@@ -13,7 +13,7 @@ let interval; // setInterval을 저장하기 위한 전역 변수
 function currentTime() {
     const now = new Date();
 
-    let hour = now.getHours(); // 시
+    let hour = now.getHours(); // 시 
     let min = now.getMinutes(); // 분
     let sec = now.getSeconds(); // 초
 
@@ -39,5 +39,3 @@ clockFn(); // 함수호출
 document.getElementById("stop").addEventListener("click", function() {
     clearInterval(interval);
 });
-
-
