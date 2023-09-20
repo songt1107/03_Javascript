@@ -59,10 +59,4 @@ document.getElementById("btn3").addEventListener("click", function() {
 
     div.append(child);
 
-
-
-
-    
 });
-
-
